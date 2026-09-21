@@ -6,6 +6,7 @@
  * times. Replace with confirmed data from the kitchen/POS before launch.
  */
 import type { MenuCategory, MenuItem } from "@/types";
+import { withBasePath } from "@/lib/assetPath";
 
 export const MENU_CATEGORIES: MenuCategory[] = [
   { id: "popular", label: "Популярное" },
@@ -19,7 +20,7 @@ export const MENU_CATEGORIES: MenuCategory[] = [
   { id: "drinks", label: "Напитки" },
 ];
 
-const img = (category: string) => `/images/menu/${category}.svg`;
+const img = (category: string) => withBasePath(`/images/menu/${category}.svg`);
 
 export const MENU_ITEMS: MenuItem[] = [
   // Korean BBQ

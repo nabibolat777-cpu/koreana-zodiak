@@ -15,6 +15,13 @@ const nextConfig = {
   output: "export",
   basePath: isGithubPages ? `/${repoName}` : "",
   assetPrefix: isGithubPages ? `/${repoName}/` : "",
+  env: {
+    // next/image with images.unoptimized doesn't rewrite its `src` through
+    // the basePath the way <Link>/the router do, so plain "/images/..."
+    // strings (data/*.ts, CSS background-image) need this at hand too —
+    // see lib/assetPath.ts.
+    NEXT_PUBLIC_BASE_PATH: isGithubPages ? `/${repoName}` : "",
+  },
 };
 
 module.exports = nextConfig;

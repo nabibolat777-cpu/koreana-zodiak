@@ -3,13 +3,14 @@ import { MapPin } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { FadeIn } from "@/components/ui/FadeIn";
 import { VENUE_CONTACT } from "@/lib/constants";
+import { withBasePath } from "@/lib/assetPath";
 
 export function Hero() {
   return (
     <section className="relative overflow-hidden border-b border-charcoal-700">
       <div
         className="absolute inset-0 bg-cover bg-center opacity-40"
-        style={{ backgroundImage: "url(/images/hero-bg.svg)" }}
+        style={{ backgroundImage: `url(${withBasePath("/images/hero-bg.svg")})` }}
         aria-hidden
       />
       <div className="absolute inset-0 bg-gradient-to-t from-charcoal-950 via-charcoal-950/70 to-charcoal-950/30" />

@@ -6,6 +6,8 @@
  * DEMO DATA for the prototype and must be replaced with confirmed
  * business information before launch (see PRD #78).
  */
+import { withBasePath } from "@/lib/assetPath";
+
 export const REAL_BUSINESS_DATA = {
   name: "Koreana BBQ × Zodiak",
   city: "Астана, Казахстан",
@@ -68,10 +70,10 @@ export interface RestaurantGalleryImage {
 }
 
 export const RESTAURANT_GALLERY: RestaurantGalleryImage[] = [
-  { id: "interior", src: "/images/restaurant/interior.svg", label: "Интерьер" },
-  { id: "korean-bbq", src: "/images/restaurant/korean-bbq.svg", label: "Korean BBQ" },
-  { id: "food", src: "/images/restaurant/food.svg", label: "Блюда" },
-  { id: "tables", src: "/images/restaurant/tables.svg", label: "Столы" },
-  { id: "vip", src: "/images/restaurant/vip.svg", label: "VIP-зона" },
-  { id: "atmosphere", src: "/images/restaurant/atmosphere.svg", label: "Атмосфера" },
+  { id: "interior", src: withBasePath("/images/restaurant/interior.svg"), label: "Интерьер" },
+  { id: "korean-bbq", src: withBasePath("/images/restaurant/korean-bbq.svg"), label: "Korean BBQ" },
+  { id: "food", src: withBasePath("/images/restaurant/food.svg"), label: "Блюда" },
+  { id: "tables", src: withBasePath("/images/restaurant/tables.svg"), label: "Столы" },
+  { id: "vip", src: withBasePath("/images/restaurant/vip.svg"), label: "VIP-зона" },
+  { id: "atmosphere", src: withBasePath("/images/restaurant/atmosphere.svg"), label: "Атмосфера" },
 ];
