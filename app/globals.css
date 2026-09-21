@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0a0908;
+  color: #f3ece1;
+}
+
+::selection {
+  background-color: #e0bd6f;
+  color: #0a0908;
+}
+
+/* Slim, on-brand scrollbars */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #121110;
+}
+::-webkit-scrollbar-thumb {
+  background: #332f2b;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #7d642a;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Visible, on-brand focus ring for keyboard navigation (PRD #58) */
+:focus-visible {
+  outline: 2px solid #e0bd6f;
+  outline-offset: 2px;
+}

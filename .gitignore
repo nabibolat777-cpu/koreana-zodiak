@@ -1,0 +1,12 @@
+node_modules
+.next
+out
+.DS_Store
+*.log
+.env*.local
+
+# local-machine dev tooling, not part of the deliverable
+.claude/
+dev.sh
+dev-launcher.cjs
+tsconfig.tsbuildinfo

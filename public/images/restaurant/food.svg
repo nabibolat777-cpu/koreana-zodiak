@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="grad-food" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1b1917"/>
+      <stop offset="100%" stop-color="#0a0908"/>
+    </linearGradient>
+    <radialGradient id="glow-food" cx="50%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#5c1522" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#5c1522" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#grad-food)"/>
+  <rect width="800" height="600" fill="url(#glow-food)"/>
+  <line x1="-100" y1="600" x2="200" y2="0" stroke="#e0bd6f" stroke-opacity="0.05" stroke-width="2"/>
+  <line x1="80" y1="600" x2="380" y2="0" stroke="#e0bd6f" stroke-opacity="0.05" stroke-width="2"/>
+  <line x1="260" y1="600" x2="560" y2="0" stroke="#e0bd6f" stroke-opacity="0.05" stroke-width="2"/>
+  <line x1="440" y1="600" x2="740" y2="0" stroke="#e0bd6f" stroke-opacity="0.05" stroke-width="2"/>
+  <line x1="620" y1="600" x2="920" y2="0" stroke="#e0bd6f" stroke-opacity="0.05" stroke-width="2"/>
+  <line x1="800" y1="600" x2="1100" y2="0" stroke="#e0bd6f" stroke-opacity="0.05" stroke-width="2"/>
+  <rect x="24" y="24" width="752" height="552" fill="none" stroke="#e0bd6f" stroke-opacity="0.25" stroke-width="1.5"/>
+  <g transform="translate(400 250)" fill="none" stroke="#e0bd6f" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+    <g transform="translate(-32 -32)">
+      <rect x="6" y="14" width="52" height="38" rx="3"/><circle cx="24" cy="30" r="6"/><path d="M6 46l14-14 12 10 10-8 16 14"/>
+    </g>
+  </g>
+  <text x="400" y="360" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="34" fill="#e0bd6f" letter-spacing="1">Блюда</text>
+  <text x="400" y="392" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" letter-spacing="3" fill="#7d642a">KOREANA BBQ × ZODIAK</text>
+</svg>
